@@ -2,7 +2,7 @@ import requests
 import ddddocr
 import execjs
 from lxml import etree
-
+import json
 
 def get_elc():
     ocr = ddddocr.DdddOcr()
@@ -35,10 +35,11 @@ def get_elc():
     captcha_text = ocr.classification(captcha_img)
     html = etree.HTML(response.text)
     lt_result = html.xpath('/html/body/div[1]/div[3]/div[2]/form/input[5]/@value')
-
+    with open('user.json', encoding='utf-8')as f:
+      f = json.load(f)
     #执行js加密，获取rsa
-    u = ''
-    p = ''
+    u = f['school-user']
+    p = f['school-password']
     b = lt_result[0]
     js_code = '''/** 
 * DES加密解密 

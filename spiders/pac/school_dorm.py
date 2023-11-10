@@ -37,8 +37,8 @@ def get_elc():
     lt_result = html.xpath('/html/body/div[1]/div[3]/div[2]/form/input[5]/@value')
 
     #执行js加密，获取rsa
-    u = '10224804419'
-    p = 'wangbangbang666.'
+    u = ''
+    p = ''
     b = lt_result[0]
     js_code = '''/** 
 * DES加密解密 

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="600db62d-12c4-4dc4-8581-c349617705e3" name="bangwu" url="http://localhost">
+        <fileTransfer rootFolder="/root" accessType="SFTP" host="101.133.231.20" port="22" sshConfigId="32f7f656-8133-40e8-8dbc-c008ba0fbdb4" sshConfig="root@101.133.231.20:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

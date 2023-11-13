@@ -4,6 +4,7 @@ import execjs
 from lxml import etree
 import json
 
+
 def get_elc():
     ocr = ddddocr.DdddOcr()
     url = 'https://portal1.ecnu.edu.cn/cas/login?service=https%3A%2F%2Fepay.ecnu.edu.cn%2Fepaycas%2Fj_spring_cas_security_check'
